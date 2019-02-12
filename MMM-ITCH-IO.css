@@ -1,8 +1,10 @@
+/* resize images to fit and not take up too much space
 
-// resize images to fit and not take up too much space
-{}
+*/ 
 
-.ITCH-IO img{
-	width=100%;
-	height=250px;
+
+ .MMM-ITCH-IO img{
+	border-radius: 20px;
+	max-height: 225px;
+	width: auto;
 }

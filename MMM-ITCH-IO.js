@@ -1,7 +1,7 @@
 
 // itchio.js
 
-Module.register("ITCH-IO",{
+Module.register("MMM-ITCH-IO",{
 	// default module config
 	defaults: {
 		text: "Retrieving games...",
@@ -13,7 +13,7 @@ Module.register("ITCH-IO",{
 		
 		// url from ITCH-IO with XML data for games
 		gamelists: [{
-			title: "[ Featured ]",
+			title: "[Featured]",
 			url: "https://itch.io/feed/featured.xml"
 		},
 		{
@@ -37,7 +37,7 @@ Module.register("ITCH-IO",{
 		// description (includes an image) 
 		wrapper.innerHTML += "<br>"+this.games[this.currentGame].getElementsByTagName("description")[0].firstChild.nodeValue;
 
-		wrapper.classList.add("small");
+		wrapper.classList.add("small","gameframe");
 		wrapper.style.maxWidth = this.config.maxWidth;
 		wrapper.style.maxHeight = this.config.maxHeight;
 		return wrapper;
@@ -105,6 +105,6 @@ Module.register("ITCH-IO",{
 	},	
 	
 	getStyles: function(){
-		return['MMM-ITCH-IO.css'];
+		return ["MMM-ITCH-IO.css"];
 	}	
 });
