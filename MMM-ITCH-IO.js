@@ -27,18 +27,17 @@ Module.register("ITCH-IO",{
 	getDom: function(){
 		var wrapper = document.createElement("div");
 		if(!this.loaded){
-			wrapper.innerHTML = "Hello Xanthus";
+			wrapper.innerHTML = "Loading...";
 			return wrapper;
 		}
 		
 		// show current game 
 		wrapper.innerHTML = "<b>"+this.games[this.currentGame].getElementsByTagName("plainTitle")[0].firstChild.nodeValue+ "</b>";		wrapper.innerHTML = "<b>"+this.games[this.currentGame].getElementsByTagName("plainTitle")[0].childNodes[0].nodeValue+" "+this.config.gamelists[this.currentGameList].title+"</b>";
 
-		//wrapper.innerHTML = "Test";
 		// description (includes an image) 
 		wrapper.innerHTML += "<br>"+this.games[this.currentGame].getElementsByTagName("description")[0].firstChild.nodeValue;
 
-		wrapper.classList.add("small","gameframe");
+		wrapper.classList.add("small");
 		wrapper.style.maxWidth = this.config.maxWidth;
 		wrapper.style.maxHeight = this.config.maxHeight;
 		return wrapper;
@@ -106,6 +105,6 @@ Module.register("ITCH-IO",{
 	},	
 	
 	getStyles: function(){
-		return['ITCH-IO.css'];
+		return['MMM-ITCH-IO.css'];
 	}	
 });
