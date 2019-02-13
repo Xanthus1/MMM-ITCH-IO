@@ -1,5 +1,4 @@
  // node helper for ITCH-IO module for Magic Mirror 2 
- // By Xanthus1
  
 const NodeHelper = require('node_helper');
 const request = require('request');
@@ -7,7 +6,7 @@ const request = require('request');
 module.exports = NodeHelper.create({
 
     start: function() {
-        console.log("Xan: Starting node_helper for: " + this.name);
+        console.log("Starting node_helper for: " + this.name);
     },
 
 	getGamesXML: function(url) {
