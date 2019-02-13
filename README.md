@@ -37,32 +37,32 @@ To use this module, include it in the 'MagicMirror/config/config.js' file:
         <td>loadingText</td>
         <td>String </td>
         <td><i>"Loading games..."</i><br> Text that displays while the games are loading at the start</td>
-    <tr>
+    </tr>
     <tr>
         <td>updateInterval</td>
         <td>Integer (in ms)</td>
         <td><i>10*1000</i><br>New games will be shown at this interval</td>
-    <tr>
+    </tr>
     <tr>
         <td>animationSpeed</td>
         <td>Integer (in ms)</td>
         <td><i>3*1000</i><br>Length of the fade in / out animation between games</td>
-    <tr>
+    </tr>
     <tr>
         <td>maxWidth</td>
         <td>String</td>
         <td><i>"100%"</i><br>style attribute for the game image's maxWidth</td>
-    <tr>
+    </tr>
     <tr>
         <td>maxHeight</td>
         <td>String</td>
         <td><i>"250px"</i><br>style attribute for the game image's maxHeight</td>
-    <tr>
+    </tr>
     <tr>
         <td>borderRadius</td>
         <td>String</td>
         <td><i>"25px"</i><br>style attribute for the game image's border radius (rounded edges). Set to 0 to remove</td>
-    <tr>
+    </tr>
     <tr>
         <td>gamelists</td>
         <td> Array of Objects</td>
